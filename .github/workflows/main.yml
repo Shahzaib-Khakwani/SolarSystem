@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4  # Consider updating checkout to v4
+        uses: actions/checkout@v4  # Updated to v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -37,12 +37,13 @@ jobs:
         run: npm run build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v3  # Fixed indentation
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # Correct for Pages
+        uses: actions/upload-pages-artifact@v2
         with:
           path: './dist'
 
       - name: Deploy to GitHub Pages
-        id:
+        id: deployment
+        uses: actions/deploy-pages@v2
