@@ -22,12 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Consider updating checkout to v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Updated to Node.js 20
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
@@ -40,10 +40,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v2  # Correct for Pages
         with:
           path: './dist'
 
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        id:
