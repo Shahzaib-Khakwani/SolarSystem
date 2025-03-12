@@ -6,24 +6,24 @@ const textureLoader = new THREE.TextureLoader();
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 
 const starsTexture = cubeTextureLoader.load([
-    'https://i.imgur.com/gLGNnkp.jpeg',
-    'https://i.imgur.com/gLGNnkp.jpeg',
-    'https://i.imgur.com/gLGNnkp.jpeg',
-    'https://i.imgur.com/gLGNnkp.jpeg',
-    'https://i.imgur.com/gLGNnkp.jpeg',
-    'https://i.imgur.com/gLGNnkp.jpeg',
+    '8k_stars.jpg',
+    '8k_stars.jpg',
+    '8k_stars.jpg',
+    '8k_stars.jpg',
+    '8k_stars.jpg',
+    '8k_stars.jpg',
 ]);
-const sunTexture = textureLoader.load('https://i.imgur.com/zU5oOjt.jpeg');
-const mercuryTexture = textureLoader.load('https://i.imgur.com/TJO6Te3.jpeg');
-const venusTexture = textureLoader.load('https://i.imgur.com/xeaPIjD.jpeg');
-const earthTexture = textureLoader.load('https://i.imgur.com/vflkkqF.jpeg');
-const marsTexture = textureLoader.load('https://i.imgur.com/U6upjrv.jpeg');
-const jupiterTexture = textureLoader.load('https://i.imgur.com/4APG00k.jpeg');
-const saturnTexture = textureLoader.load('https://i.imgur.com/YKw0m4x.jpeg');
+const sunTexture = textureLoader.load('8k_sun.jpg');
+const mercuryTexture = textureLoader.load('8k_mercury.jpg');
+const venusTexture = textureLoader.load('4k_venus_atmosphere.jpg');
+const earthTexture = textureLoader.load('8k_earth_daymap.jpg');
+const marsTexture = textureLoader.load('8k_mars.jpg');
+const jupiterTexture = textureLoader.load('8k_jupiter.jpg');
+const saturnTexture = textureLoader.load('8k_saturn.jpg');
 const saturnRingTexture = textureLoader.load('https://i.imgur.com/u0muMiZ.png');
-const uranusTexture = textureLoader.load('https://i.imgur.com/olpgGMo.jpeg');
+const uranusTexture = textureLoader.load('2k_uranus.jpg');
 const uranusRingTexture = textureLoader.load('https://i.imgur.com/F1y9Ve4.png');
-const neptuneTexture = textureLoader.load('https://i.imgur.com/pycXdLM.jpeg');
+const neptuneTexture = textureLoader.load('2k_neptune.jpg');
 const plutoTexture = textureLoader.load('https://i.imgur.com/YNsmmHV.jpeg');
 
 textures.push(
@@ -128,16 +128,6 @@ const uranus = createPlanet(7, uranusTexture, 176, {
     outerRadius: 12,
     texture: uranusRingTexture
   });
-
-
-
-
-
-
-
-
-
-
 
 
 
