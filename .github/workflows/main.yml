@@ -37,7 +37,7 @@ jobs:
 
       - name: Build site
         env:
-          BASE_PATH: '/portfolio'
+          BASE_PATH: '/SolarSystem'
         run: |
           npm run build
           touch build/.nojekyll
